@@ -3073,8 +3073,6 @@ https://console.developers.google.com/
 
 - DevelopmentPhase のチームで、新たに一つアプリを開発してみてください
   - DevelopmentPhase で開発予定のアプリとは異なるアプリにしましょう
-- Adalo か Bubble のどちらを使うかは自由です
-  - DevelopmentPhase で使う予定の方を選んでも良いですし、両方を選んでも良いです
 - 全員が手を動かすようにしましょう
 
 ---

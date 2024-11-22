@@ -3207,7 +3207,6 @@ To co-edit an app with team members...
 
 - Try developing a new app as a DevelopmentPhase team
 - Make it a different app from the one you plan to develop in DevelopmentPhase
-- You are free to use either Adalo or Bubble
 - You can choose whichever you plan to use in DevelopmentPhase, or both
 - Get everyone involved
 
