@@ -169,3 +169,6 @@ Next(フロントエンド、バックエンド共に)、Prisma(ORM)、suparbase
 
 UI デザイン
 添付画像を参照してください
+
+# prismaとsupabaseAuthenticationでのユーザー管理
+https://qiita.com/Naoya_pro/items/a2eb6bd5b076a5ae06df
