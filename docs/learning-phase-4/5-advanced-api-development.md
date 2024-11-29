@@ -1,5 +1,11 @@
 # 5. Advanced api development
 
+## Preparation
+
+- Open the previously developed app (learning-phase-2) in Visual Studio Code.
+  - Click `File > Open Folder... ` and select `learning-phase-2` folder.
+    ![Open Folder](images/2024-11-29-17-34-21.png)
+
 ## Customize API
 
 ### Specifying search conditions for the API to retrieve a list
@@ -216,13 +222,17 @@ In the initial state, file upload is not allowed in the security settings, so ad
 
 ![](images/2023-11-24-10-05-10.png)
 
-- Set as follows
+- Set as follows and Click Review.
   - Policy name: allow-all
   - Allowed operations: SELECT, INSERT, UPDATE, DELETE
   - Target roles: Default
   - Policy definition: Default
 
 ![](images/2023-11-25-04-37-27.png)
+
+- Click Save Policy.
+
+![](images/2024-11-29-18-22-20.png)
 
 
 ### Image Upload API
@@ -284,4 +294,4 @@ Tip: All Parameters passed to the list method are Optional, so you can omit them
 
 ## Deploy to the application on Vercel
 Commit and Push your changes. By doing so, you can deploy the changes to the app on Vercel.
-(If you forget how to do this, please refer to the material in the 4th lecture.)
+(If you forget how to do this, please refer to the material in the 2nd lecture.)
