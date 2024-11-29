@@ -6,5 +6,8 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
-  "editor.tabSize": 2
+  "editor.tabSize": 2,
+  "pasteImage.basePath": "${currentFileDir}/images",
+  "pasteImage.path": "${currentFileDir}/images",
+  "pasteImage.insertPattern": "${imageSyntaxPrefix}images/${imageFilePath}${imageSyntaxSuffix}"
 }
