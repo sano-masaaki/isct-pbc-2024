@@ -1,3 +1,22 @@
+# Supabaseへの接続エラー対応
+```
+Error occurred during query execution:
+ConnectorError(ConnectorError { user_facing_error: None, kind: QueryError(PostgresError { code: "42P05", message: "prepared statement \"s1\" already exists", severity: "ERROR", detail: None, column: None, hint: None }), transient: false })
+```
+
+npm run devの実行時に上記のエラーメッセージが出た場合は、
+.envファイルのPOSTGRES_PRISMA_URL、POSTGRES_URL、POSTGRES_URL_NON_POOLINGの3項目の末尾に、 `&pgbouncer=true&connection_limit=1` を追加してください。
+
+example
+```
+POSTGRES_PRISMA_URL="postgres://postgres.rnidcwhpjstpbqzalkpi:dLFAcGvjtU7btNfM@aws-0-us-east-1.pooler.supabase.com:6543/postgres?sslmode=require&supa=base-pooler.x&pgbouncer=true&connection_limit=1"
+POSTGRES_URL="postgres://postgres.rnidcwhpjstpbqzalkpi:dLFAcGvjtU7btNfM@aws-0-us-east-1.pooler.supabase.com:6543/postgres?sslmode=require&supa=base-pooler.x&pgbouncer=true&connection_limit=1"
+POSTGRES_URL_NON_POOLING="postgres://postgres.rnidcwhpjstpbqzalkpi:dLFAcGvjtU7btNfM@aws-0-us-east-1.pooler.supabase.com:5432/postgres?sslmode=require&pgbouncer=true&connection_limit=1"
+```
+
+# Windowsの許可設定コマンド
+`Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process`
+
 # 無料版 GPT でできること
 
 無料版の ChatGPT では、最新の AI モデルである GPT-4o が利用可能です。ただし、GPT-4o の利用には 5 時間に 10 回までの制限があります。
@@ -97,7 +116,9 @@ https://exawizards.com/column/article/chatgpt/gpt-4o/
 - ペット詳細
 - ペットの体重記録
 
-使用する技術は、Next(フロントエンド、バックエンド共に)、Prisma(ORM)、suparbase(DB)でお願いします。
+使用する技術は以下のとおりです。
+Next(フロントエンド、バックエンド共に)、Prisma(ORM)、suparbase(DB)でお願いします。
+回答は日本語でお願いします
 
 ## アイデア
 
